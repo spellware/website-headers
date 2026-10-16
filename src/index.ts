@@ -358,10 +358,11 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.015em;
   color: var(--heading);
   margin-bottom: 0.5em;
+  overflow-wrap: break-word;
 }
 
-h1 { font-size: 2.6rem; letter-spacing: -0.025em; }
-h2 { font-size: 2.1rem; }
+h1 { font-size: clamp(1.9rem, 7vw, 2.6rem); letter-spacing: -0.025em; }
+h2 { font-size: clamp(1.55rem, 5.5vw, 2.1rem); }
 h3 { font-size: 1.5rem; }
 h4 { font-size: 1.2rem; }
 h5, h6 { font-size: 1rem; }
@@ -588,6 +589,11 @@ pre code {
 header.hs-elevate-header,
 footer.hs-elevate-footer {
   display: none !important;
+}
+
+/* Long articles read better left aligned than centred. */
+body.hs-blog-post main {
+  text-align: left;
 }
 
 /* HubSpot's theme takes its link colours from these variables, so set them to ours. Links stay underlined. */

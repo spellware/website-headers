@@ -48,7 +48,7 @@ A page that already has its own `header.site-header` never gets a second header.
 
 ## HubSpot
 
-HubSpot pages do not load this script by default, and they use HubSpot's own theme header and footer. To bring them in line, the script is added to each page and post. The script hides HubSpot's theme header and footer (`header.hs-elevate-header` and `footer.hs-elevate-footer`) and shows its own.
+HubSpot pages do not load this script by default, and they use HubSpot's own theme header and footer. To bring them in line, the script is added to each page and post. The script hides HubSpot's theme header and footer (`header.hs-elevate-header` and `footer.hs-elevate-footer`) and shows its own. It also sets HubSpot's link colour variables to ours, and left aligns blog posts, because long articles read better that way.
 
 ## Live Version
 
