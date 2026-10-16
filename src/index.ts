@@ -590,6 +590,16 @@ footer.hs-elevate-footer {
   display: none !important;
 }
 
+/* HubSpot's theme takes its link colours from these variables, so set them to ours. Links stay underlined. */
+:root {
+  --hsElevate--link--primary__fontColor: var(--witch-plum);
+  --hsElevate--link--primary__textDecoration: underline;
+  --hsElevate--link--primary__textDecorationColor: var(--witch-rose);
+  --hsElevate--link--primary__hover--fontColor: var(--witch-rose-deep);
+  --hsElevate--link--primary__hover--textDecoration: underline;
+  --hsElevate--link--primary__hover--textDecorationColor: var(--witch-rose-deep);
+}
+
 @media screen and (max-width: 850px) {
   main {
     padding: 24px 20px;
