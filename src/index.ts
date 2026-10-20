@@ -1409,6 +1409,7 @@ nhcarriganHeadersFooter.innerHTML = `
               <span>NHCarrigan</span>
             </a>
             <p>Software engineering and community management for developer-facing companies.</p>
+            <p>Hours: Monday to Friday, 09:00 to 21:00 Pacific Time.</p>
           </div>
 
           <nav aria-label="Company">
@@ -1420,6 +1421,7 @@ nhcarriganHeadersFooter.innerHTML = `
               <li><a href="https://nhcarrigan.com/#approach">Approach</a></li>
               <li><a href="https://nhcarrigan.com/#about">About</a></li>
               <li><a href="https://nhcarrigan.com/#contact">Contact</a></li>
+              <li><a href="tel:+19713038662">Call (971) 303-8662</a></li>
               <li><a href="https://nhcarrigan.com/meet/">Book a meeting</a></li>
               <li><a href="https://nhcarrigan.com/donate/">Support us</a></li>
             </ul>
