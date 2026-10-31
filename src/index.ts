@@ -101,7 +101,7 @@ const nhcarriganHeadersOpenGraphImage = document.createElement("meta");
 nhcarriganHeadersOpenGraphImage.setAttribute("property", "og:image");
 nhcarriganHeadersOpenGraphImage.setAttribute(
   "content",
-  "https://cdn.nhcarrigan.com/og-image.png",
+  "https://cdn.nhcarrigan.com/brand/v2/og-image.png",
 );
 const nhcarriganHeadersOpenGraphUrl = document.createElement("meta");
 nhcarriganHeadersOpenGraphUrl.setAttribute("property", "og:url");
@@ -156,7 +156,7 @@ const nhcarriganHeadersTwitterImage = document.createElement("meta");
 nhcarriganHeadersTwitterImage.setAttribute("name", "twitter:image");
 nhcarriganHeadersTwitterImage.setAttribute(
   "content",
-  "https://cdn.nhcarrigan.com/og-image.png",
+  "https://cdn.nhcarrigan.com/brand/v2/og-image.png",
 );
 const nhcarriganHeadersTwitterSite = document.createElement("meta");
 nhcarriganHeadersTwitterSite.setAttribute("name", "twitter:site");
@@ -183,19 +183,19 @@ const nhcarriganHeadersFavicon = document.createElement("link");
 nhcarriganHeadersFavicon.rel = "icon";
 nhcarriganHeadersFavicon.type = "image/x-icon";
 nhcarriganHeadersFavicon.href
-  = "https://cdn.nhcarrigan.com/favicon/favicon.ico";
+  = "https://cdn.nhcarrigan.com/brand/v2/favicon/favicon.ico";
 const nhcarriganHeadersAppleTouchIcon = document.createElement("link");
 nhcarriganHeadersAppleTouchIcon.rel = "apple-touch-icon";
 nhcarriganHeadersAppleTouchIcon.href
-  = "https://cdn.nhcarrigan.com/favicon/apple-touch-icon.png";
+  = "https://cdn.nhcarrigan.com/brand/v2/favicon/apple-touch-icon.png";
 const nhcarriganHeadersSmallIcon = document.createElement("link");
 nhcarriganHeadersSmallIcon.rel = "icon";
 nhcarriganHeadersSmallIcon.href
-  = "https://cdn.nhcarrigan.com/favicon/favicon-16x16.png";
+  = "https://cdn.nhcarrigan.com/brand/v2/favicon/favicon-16x16.png";
 const nhcarriganHeadersLargeIcon = document.createElement("link");
 nhcarriganHeadersLargeIcon.rel = "icon";
 nhcarriganHeadersLargeIcon.href
-  = "https://cdn.nhcarrigan.com/favicon/favicon-32x32.png";
+  = "https://cdn.nhcarrigan.com/brand/v2/favicon/favicon-32x32.png";
 
 // #endregion
 
@@ -209,7 +209,7 @@ nhcarriganHeadersLargeIcon.href
 const nhcarriganHeadersTokens = document.createElement("style");
 nhcarriganHeadersTokens.id = "nhcarrigan-global-tokens";
 nhcarriganHeadersTokens.innerHTML = `
-@import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@72,600,50&display=swap');
 
 :root {
   /* Official palette (https://nhcarrigan.com/style/) */
@@ -225,8 +225,9 @@ nhcarriganHeadersTokens.innerHTML = `
   --witch-moon: #F5F5F5;
   --witch-shadow: rgba(10, 0, 9, 0.7);
 
-  /* Typography. Griffy is reserved for the wordmark. */
-  --font-brand: 'Griffy', Georgia, 'Times New Roman', serif;
+  /* Typography. Fraunces is reserved for the wordmark. The variation settings match the logo artwork. */
+  --font-brand: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-brand-variation: 'opsz' 72, 'SOFT' 50, 'WONK' 0;
   --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-heading: var(--font-body);
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
@@ -582,7 +583,8 @@ pre code {
 .mystical-text,
 .spooky-title {
   font-family: var(--font-brand);
-  font-weight: 400;
+  font-weight: 600;
+  font-variation-settings: var(--font-brand-variation);
 }
 
 /* HubSpot pages bring their own theme header and footer, which this script replaces */
@@ -1022,8 +1024,9 @@ nhcarriganHeadersChromeStyles.innerHTML = `
   text-decoration: none;
   font-family: var(--font-brand);
   font-size: 1.45rem;
-  font-weight: 400;
-  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-variation-settings: var(--font-brand-variation);
+  letter-spacing: 0;
 }
 .nhc-header .nhc-brand:hover,
 .nhc-footer .nhc-brand:hover { color: var(--witch-mauve); }
@@ -1033,6 +1036,27 @@ nhcarriganHeadersChromeStyles.innerHTML = `
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.nhc-header .nhc-brand img.nhc-wordmark {
+  width: auto;
+  height: 48px;
+  border-radius: 0;
+  object-fit: contain;
+}
+.nhc-header .nhc-brand #nhc-header-title {
+  padding-left: 0.85rem;
+  border-left: 1px solid rgba(212, 165, 199, 0.4);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  font-variation-settings: normal;
+  color: var(--witch-lavender);
+}
+.nhc-header .nhc-brand #nhc-header-title[hidden] { display: none; }
+@media (max-width: 480px) {
+  .nhc-header-inner { padding: 0 14px; }
+  .nhc-header .nhc-brand img.nhc-wordmark { height: 36px; }
+  .nhc-header .nhc-brand #nhc-header-title { display: none; }
 }
 
 .nhc-nav-links {
@@ -1381,8 +1405,8 @@ nhcarriganHeadersHeader.setAttribute("class", "nhc-header");
 nhcarriganHeadersHeader.innerHTML = `
 <div class="nhc-header-inner">
   <a class="nhc-brand" href="${nhcarriganHeadersHomeUrl}">
-    <img src="https://cdn.nhcarrigan.com/logo.png" alt="" width="38" height="38">
-    <span id="nhc-header-title">${nhcarriganHeadersDefaultTitle}</span>
+    <img class="nhc-wordmark" src="https://cdn.nhcarrigan.com/wordmark.png" alt="${nhcarriganHeadersDefaultTitle}" width="194" height="48">
+    <span id="nhc-header-title" hidden></span>
   </a>
   <button class="nhc-menu-toggle" type="button" aria-expanded="false" aria-controls="nhc-primary-navigation">Menu</button>
   <nav aria-label="Primary">
@@ -1405,7 +1429,7 @@ nhcarriganHeadersFooter.innerHTML = `
         <div class="nhc-footer-grid">
           <div class="nhc-footer-brand">
             <a class="nhc-brand" href="https://nhcarrigan.com/">
-              <img src="https://cdn.nhcarrigan.com/logo.png" alt="" width="38" height="38">
+              <img src="https://cdn.nhcarrigan.com/brand/v2/logo.png" alt="" width="38" height="38">
               <span>NHCarrigan</span>
             </a>
             <p>Software engineering and community management for developer-facing companies.</p>
@@ -1677,17 +1701,27 @@ const nhcarriganHeadersSetMenu = (open: boolean): void => {
 };
 
 /**
- * Puts the page's title beside the logo, and keeps it current when a page
- * changes its title without reloading.
+ * Puts the page's title beside the wordmark, unless it is just the company
+ * name, and keeps it current when a page changes its title without reloading.
  */
 const nhcarriganHeadersShowTitle = (): void => {
   const title = nhcarriganHeadersTitleText();
+  const isDefaultTitle
+    = title.toLowerCase() === nhcarriganHeadersDefaultTitle.toLowerCase();
   const target = nhcarriganHeadersHeader.querySelector("#nhc-header-title");
   const brand = nhcarriganHeadersHeader.querySelector(".nhc-brand");
-  if (target !== null) {
-    target.textContent = title;
+  if (target instanceof HTMLElement) {
+    target.textContent = isDefaultTitle
+      ? ""
+      : title;
+    target.hidden = isDefaultTitle;
   }
-  brand?.setAttribute("aria-label", `${title}, NHCarrigan home`);
+  brand?.setAttribute(
+    "aria-label",
+    isDefaultTitle
+      ? `${nhcarriganHeadersDefaultTitle} home`
+      : `${title}, ${nhcarriganHeadersDefaultTitle} home`,
+  );
 };
 
 /**
@@ -1753,7 +1787,7 @@ const nhcarriganHeadersCreateCta = (): HTMLDialogElement => {
   <p class="nhc-cta-eyebrow">Community</p>
   <h2 id="community-cta-title">Join the NHCarrigan community</h2>
   <div class="nhc-cta-body">
-    <img src="https://cdn.nhcarrigan.com/logo.png" alt="NHCarrigan logo">
+    <img src="https://cdn.nhcarrigan.com/brand/v2/logo.png" alt="NHCarrigan logo">
     <p>Stay connected with our latest projects, get help with our products and meet the people behind them.</p>
   </div>
   <a class="nhc-btn nhc-btn-primary" href="https://chat.nhcarrigan.com" target="_blank" rel="noreferrer">Join us on Discord</a>
