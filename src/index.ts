@@ -101,7 +101,7 @@ const nhcarriganHeadersOpenGraphImage = document.createElement("meta");
 nhcarriganHeadersOpenGraphImage.setAttribute("property", "og:image");
 nhcarriganHeadersOpenGraphImage.setAttribute(
   "content",
-  "https://cdn.nhcarrigan.com/brand/v2/og-image.png",
+  "https://cdn.nhcarrigan.com/brand/v3/og-image.png",
 );
 const nhcarriganHeadersOpenGraphUrl = document.createElement("meta");
 nhcarriganHeadersOpenGraphUrl.setAttribute("property", "og:url");
@@ -117,15 +117,17 @@ nhcarriganHeadersOpenGraphLocale.setAttribute("property", "og:locale");
 nhcarriganHeadersOpenGraphLocale.setAttribute("content", "en_US");
 const nhcarriganHeadersOpenGraphImageAlt = document.createElement("meta");
 nhcarriganHeadersOpenGraphImageAlt.setAttribute("property", "og:image:alt");
-nhcarriganHeadersOpenGraphImageAlt.
-  setAttribute("content", "NHCarrigan logo and branding");
+nhcarriganHeadersOpenGraphImageAlt.setAttribute(
+  "content",
+  "NHCarrigan logo with the tagline Thoughtfully built. Wonderfully human.",
+);
 const nhcarriganHeadersOpenGraphImageWidth = document.createElement("meta");
 nhcarriganHeadersOpenGraphImageWidth.setAttribute("property", "og:image:width");
-nhcarriganHeadersOpenGraphImageWidth.setAttribute("content", "1920");
+nhcarriganHeadersOpenGraphImageWidth.setAttribute("content", "1200");
 const nhcarriganHeadersOpenGraphImageHeight = document.createElement("meta");
 nhcarriganHeadersOpenGraphImageHeight.
   setAttribute("property", "og:image:height");
-nhcarriganHeadersOpenGraphImageHeight.setAttribute("content", "1080");
+nhcarriganHeadersOpenGraphImageHeight.setAttribute("content", "630");
 
 const nhcarriganHeadersTwitterCard = document.createElement("meta");
 nhcarriganHeadersTwitterCard.setAttribute("name", "twitter:card");
@@ -156,7 +158,7 @@ const nhcarriganHeadersTwitterImage = document.createElement("meta");
 nhcarriganHeadersTwitterImage.setAttribute("name", "twitter:image");
 nhcarriganHeadersTwitterImage.setAttribute(
   "content",
-  "https://cdn.nhcarrigan.com/brand/v2/og-image.png",
+  "https://cdn.nhcarrigan.com/brand/v3/og-image.png",
 );
 const nhcarriganHeadersTwitterSite = document.createElement("meta");
 nhcarriganHeadersTwitterSite.setAttribute("name", "twitter:site");
@@ -1162,6 +1164,7 @@ nhcarriganHeadersChromeStyles.innerHTML = `
   gap: 40px;
 }
 .nhc-footer-brand p { margin: 1rem 0 0; max-width: 20rem; color: var(--witch-silver); }
+.nhc-footer-brand p.nhc-footer-tagline { margin-top: 1.1rem; font-family: var(--font-brand); font-size: 1.2rem; font-weight: 600; font-variation-settings: var(--font-brand-variation); line-height: 1.3; text-wrap: balance; color: var(--witch-lavender); }
 .nhc-footer-brand .nhc-brand img { border-radius: 10px; box-shadow: 0 0 26px rgba(168, 87, 126, 0.7); }
 .nhc-footer h2 {
   margin-bottom: 1rem;
@@ -1432,6 +1435,7 @@ nhcarriganHeadersFooter.innerHTML = `
               <img src="https://cdn.nhcarrigan.com/brand/v2/logo.png" alt="" width="38" height="38">
               <span>NHCarrigan</span>
             </a>
+            <p class="nhc-footer-tagline">Thoughtfully built. Wonderfully human.</p>
             <p>Software engineering and community management for developer-facing companies.</p>
             <p>Hours: Monday to Friday, 09:00 to 21:00 Pacific Time.</p>
           </div>

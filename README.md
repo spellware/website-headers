@@ -18,6 +18,13 @@ The injected stylesheet is the shared visual language for every page, and it mat
 - **The community popup** has the same lit surface, rose glow and glowing button.
 - **Components** are opt-in classes, all prefixed `nhc-` so they cannot collide with an app's own styles: `nhc-card`, `nhc-quote`, `nhc-notice`, `nhc-grid-2`, `nhc-grid-3`, `nhc-eyebrow`, `nhc-section-head`, `nhc-pill`, `nhc-accent`, `nhc-feature`, `nhc-faq-grid` with `nhc-faq-card`, and `nhc-chip`. Buttons use `nhc-btn` with `nhc-btn-primary`, `nhc-btn-ghost`, `nhc-btn-outline`, `nhc-btn-dark` and `nhc-btn-small`.
 
+### What changed in v6.2
+
+Version 6.2 adds our tagline. No markup changes are needed on any page:
+
+- The footer now opens with the tagline, "Thoughtfully built. Wonderfully human.", in the brand typeface. The descriptor stays beneath it.
+- The social image served by default is now `cdn.nhcarrigan.com/brand/v3/og-image.png`, which carries the tagline. Its alt text describes the logo and the tagline.
+
 ### What changed in v6.1
 
 Version 6.1 adopts the new brand. No markup changes are needed on any page:
