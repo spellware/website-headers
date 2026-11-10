@@ -18,6 +18,10 @@ The injected stylesheet is the shared visual language for every page, and it mat
 - **The community popup** has the same lit surface, rose glow and glowing button.
 - **Components** are opt-in classes, all prefixed `nhc-` so they cannot collide with an app's own styles: `nhc-card`, `nhc-quote`, `nhc-notice`, `nhc-grid-2`, `nhc-grid-3`, `nhc-eyebrow`, `nhc-section-head`, `nhc-pill`, `nhc-accent`, `nhc-feature`, `nhc-faq-grid` with `nhc-faq-card`, and `nhc-chip`. Buttons use `nhc-btn` with `nhc-btn-primary`, `nhc-btn-ghost`, `nhc-btn-outline`, `nhc-btn-dark` and `nhc-btn-small`.
 
+### What changed in v6.3.1
+
+Version 6.3.1 updates the X handle used in the social card tags to @spellware_dev. No markup changes are needed.
+
 ### What changed in v6.3
 
 Version 6.3 renames the company from NHCarrigan to SpellWare. No markup changes are needed on any page:

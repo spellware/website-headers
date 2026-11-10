@@ -162,10 +162,10 @@ nhcarriganHeadersTwitterImage.setAttribute(
 );
 const nhcarriganHeadersTwitterSite = document.createElement("meta");
 nhcarriganHeadersTwitterSite.setAttribute("name", "twitter:site");
-nhcarriganHeadersTwitterSite.setAttribute("content", "@nhcarrigan1");
+nhcarriganHeadersTwitterSite.setAttribute("content", "@spellware_dev");
 const nhcarriganHeadersTwitterCreator = document.createElement("meta");
 nhcarriganHeadersTwitterCreator.setAttribute("name", "twitter:creator");
-nhcarriganHeadersTwitterCreator.setAttribute("content", "@nhcarrigan1");
+nhcarriganHeadersTwitterCreator.setAttribute("content", "@spellware_dev");
 
 const nhcarriganHeadersFormatDetection = document.createElement("meta");
 nhcarriganHeadersFormatDetection.setAttribute("name", "format-detection");
