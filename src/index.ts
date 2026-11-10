@@ -8,12 +8,12 @@
 const nhcarriganHeadersVersion = "{{ version }}";
 console.log(`
 ========================================
-Loading NHCarrigan library v${nhcarriganHeadersVersion}.
+Loading SpellWare library v${nhcarriganHeadersVersion}.
 Copyright (c) ${new Date().getFullYear().
-  toString()} NHCarrigan
-Changelog: https://github.com/nhcarrigan/website-headers/releases
-Licensed under our public license: https://docs.nhcarrigan.com/legal/license
-Questions? Contact us at https://docs.nhcarrigan.com/about/contact
+  toString()} SpellWare
+Changelog: https://github.com/spellware/website-headers/releases
+Licensed under our public license: https://docs.spellware.dev/legal/license
+Questions? Contact us at https://docs.spellware.dev/about/contact
 ========================================
 `);
 // #endregion
@@ -85,7 +85,7 @@ const nhcarriganHeadersOpenGraphTitle = document.createElement("meta");
 nhcarriganHeadersOpenGraphTitle.setAttribute("property", "og:title");
 nhcarriganHeadersOpenGraphTitle.setAttribute(
   "content",
-  nhcarriganHeadersTitle?.innerText ?? "NHCarrigan",
+  nhcarriganHeadersTitle?.innerText ?? "SpellWare",
 );
 const nhcarriganHeadersOpenGraphDescription = document.createElement("meta");
 nhcarriganHeadersOpenGraphDescription.setAttribute(
@@ -101,7 +101,7 @@ const nhcarriganHeadersOpenGraphImage = document.createElement("meta");
 nhcarriganHeadersOpenGraphImage.setAttribute("property", "og:image");
 nhcarriganHeadersOpenGraphImage.setAttribute(
   "content",
-  "https://cdn.nhcarrigan.com/brand/v3/og-image.png",
+  "https://cdn.spellware.dev/brand/v3/og-image.png",
 );
 const nhcarriganHeadersOpenGraphUrl = document.createElement("meta");
 nhcarriganHeadersOpenGraphUrl.setAttribute("property", "og:url");
@@ -111,7 +111,7 @@ nhcarriganHeadersOpenGraphType.setAttribute("property", "og:type");
 nhcarriganHeadersOpenGraphType.setAttribute("content", "website");
 const nhcarriganHeadersOpenGraphSiteName = document.createElement("meta");
 nhcarriganHeadersOpenGraphSiteName.setAttribute("property", "og:site_name");
-nhcarriganHeadersOpenGraphSiteName.setAttribute("content", "NHCarrigan");
+nhcarriganHeadersOpenGraphSiteName.setAttribute("content", "SpellWare");
 const nhcarriganHeadersOpenGraphLocale = document.createElement("meta");
 nhcarriganHeadersOpenGraphLocale.setAttribute("property", "og:locale");
 nhcarriganHeadersOpenGraphLocale.setAttribute("content", "en_US");
@@ -119,7 +119,7 @@ const nhcarriganHeadersOpenGraphImageAlt = document.createElement("meta");
 nhcarriganHeadersOpenGraphImageAlt.setAttribute("property", "og:image:alt");
 nhcarriganHeadersOpenGraphImageAlt.setAttribute(
   "content",
-  "NHCarrigan logo with the tagline Thoughtfully built. Wonderfully human.",
+  "SpellWare logo with the tagline Thoughtfully built. Wonderfully human.",
 );
 const nhcarriganHeadersOpenGraphImageWidth = document.createElement("meta");
 nhcarriganHeadersOpenGraphImageWidth.setAttribute("property", "og:image:width");
@@ -145,7 +145,7 @@ const nhcarriganHeadersTwitterTitle = document.createElement("meta");
 nhcarriganHeadersTwitterTitle.setAttribute("name", "twitter:title");
 nhcarriganHeadersTwitterTitle.setAttribute(
   "content",
-  nhcarriganHeadersTitle?.innerText ?? "NHCarrigan",
+  nhcarriganHeadersTitle?.innerText ?? "SpellWare",
 );
 const nhcarriganHeadersTwitterDescription = document.createElement("meta");
 nhcarriganHeadersTwitterDescription.setAttribute("name", "twitter:description");
@@ -158,7 +158,7 @@ const nhcarriganHeadersTwitterImage = document.createElement("meta");
 nhcarriganHeadersTwitterImage.setAttribute("name", "twitter:image");
 nhcarriganHeadersTwitterImage.setAttribute(
   "content",
-  "https://cdn.nhcarrigan.com/brand/v3/og-image.png",
+  "https://cdn.spellware.dev/brand/v3/og-image.png",
 );
 const nhcarriganHeadersTwitterSite = document.createElement("meta");
 nhcarriganHeadersTwitterSite.setAttribute("name", "twitter:site");
@@ -185,19 +185,19 @@ const nhcarriganHeadersFavicon = document.createElement("link");
 nhcarriganHeadersFavicon.rel = "icon";
 nhcarriganHeadersFavicon.type = "image/x-icon";
 nhcarriganHeadersFavicon.href
-  = "https://cdn.nhcarrigan.com/brand/v2/favicon/favicon.ico";
+  = "https://cdn.spellware.dev/brand/v2/favicon/favicon.ico";
 const nhcarriganHeadersAppleTouchIcon = document.createElement("link");
 nhcarriganHeadersAppleTouchIcon.rel = "apple-touch-icon";
 nhcarriganHeadersAppleTouchIcon.href
-  = "https://cdn.nhcarrigan.com/brand/v2/favicon/apple-touch-icon.png";
+  = "https://cdn.spellware.dev/brand/v2/favicon/apple-touch-icon.png";
 const nhcarriganHeadersSmallIcon = document.createElement("link");
 nhcarriganHeadersSmallIcon.rel = "icon";
 nhcarriganHeadersSmallIcon.href
-  = "https://cdn.nhcarrigan.com/brand/v2/favicon/favicon-16x16.png";
+  = "https://cdn.spellware.dev/brand/v2/favicon/favicon-16x16.png";
 const nhcarriganHeadersLargeIcon = document.createElement("link");
 nhcarriganHeadersLargeIcon.rel = "icon";
 nhcarriganHeadersLargeIcon.href
-  = "https://cdn.nhcarrigan.com/brand/v2/favicon/favicon-32x32.png";
+  = "https://cdn.spellware.dev/brand/v2/favicon/favicon-32x32.png";
 
 // #endregion
 
@@ -214,7 +214,7 @@ nhcarriganHeadersTokens.innerHTML = `
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@72,600,50&display=swap');
 
 :root {
-  /* Official palette (https://nhcarrigan.com/style/) */
+  /* Official palette (https://spellware.dev/style/) */
   --witch-purple: #2B1B3D;
   --witch-plum: #44275A;
   --witch-rose: #A8577E;
@@ -319,7 +319,7 @@ body::after {
 }
 
 body::before {
-  background: url(https://cdn.nhcarrigan.com/background.png);
+  background: url(https://cdn.spellware.dev/background.png);
   background-size: cover;
   background-position: center;
   z-index: -2;
@@ -1378,13 +1378,13 @@ nhcarriganHeadersCtaStyles.innerHTML = `
 
 const nhcarriganHeadersCurrentYear = new Date().getFullYear().
   toString();
-const nhcarriganHeadersHomeUrl = "https://nhcarrigan.com/";
-const nhcarriganHeadersDefaultTitle = "NHCarrigan";
+const nhcarriganHeadersHomeUrl = "https://spellware.dev/";
+const nhcarriganHeadersDefaultTitle = "SpellWare";
 
 /**
  * Works out the text shown beside the logo. A page can set it with a
  * data-nhcarrigan-title attribute on the html element. Otherwise it is taken
- * from the page title, without the NHCarrigan name or its separators.
+ * from the page title, without the SpellWare name or its separators.
  * @returns The text for the header.
  */
 const nhcarriganHeadersTitleText = (): string => {
@@ -1408,18 +1408,18 @@ nhcarriganHeadersHeader.setAttribute("class", "nhc-header");
 nhcarriganHeadersHeader.innerHTML = `
 <div class="nhc-header-inner">
   <a class="nhc-brand" href="${nhcarriganHeadersHomeUrl}">
-    <img class="nhc-wordmark" src="https://cdn.nhcarrigan.com/wordmark.png" alt="${nhcarriganHeadersDefaultTitle}" width="194" height="48">
+    <img class="nhc-wordmark" src="https://cdn.spellware.dev/wordmark.png" alt="${nhcarriganHeadersDefaultTitle}" width="194" height="48">
     <span id="nhc-header-title" hidden></span>
   </a>
   <button class="nhc-menu-toggle" type="button" aria-expanded="false" aria-controls="nhc-primary-navigation">Menu</button>
   <nav aria-label="Primary">
     <div class="nhc-nav-links" id="nhc-primary-navigation">
-      <a href="https://nhcarrigan.com/#services">Services</a>
-      <a href="https://nhcarrigan.com/#approach">Approach</a>
-      <a href="https://nhcarrigan.com/#evidence">Evidence</a>
-      <a href="https://nhcarrigan.com/#about">About</a>
-      <a href="https://nhcarrigan.com/#faq">FAQ</a>
-      <a class="nhc-btn nhc-btn-primary nhc-btn-small" href="https://nhcarrigan.com/#contact">Get in touch</a>
+      <a href="https://spellware.dev/#services">Services</a>
+      <a href="https://spellware.dev/#approach">Approach</a>
+      <a href="https://spellware.dev/#evidence">Evidence</a>
+      <a href="https://spellware.dev/#about">About</a>
+      <a href="https://spellware.dev/#faq">FAQ</a>
+      <a class="nhc-btn nhc-btn-primary nhc-btn-small" href="https://spellware.dev/#contact">Get in touch</a>
     </div>
   </nav>
 </div>
@@ -1431,9 +1431,9 @@ nhcarriganHeadersFooter.innerHTML = `
       <div class="nhc-container">
         <div class="nhc-footer-grid">
           <div class="nhc-footer-brand">
-            <a class="nhc-brand" href="https://nhcarrigan.com/">
-              <img src="https://cdn.nhcarrigan.com/brand/v2/logo.png" alt="" width="38" height="38">
-              <span>NHCarrigan</span>
+            <a class="nhc-brand" href="https://spellware.dev/">
+              <img src="https://cdn.spellware.dev/brand/v2/logo.png" alt="" width="38" height="38">
+              <span>SpellWare</span>
             </a>
             <p class="nhc-footer-tagline">Thoughtfully built. Wonderfully human.</p>
             <p>Software engineering and community management for developer-facing companies.</p>
@@ -1443,49 +1443,49 @@ nhcarriganHeadersFooter.innerHTML = `
           <nav aria-label="Company">
             <h2>Company</h2>
             <ul class="nhc-footer-links">
-              <li><a href="https://nhcarrigan.com/#services">Services</a></li>
-              <li><a href="https://nhcarrigan.com/products/">Products</a></li>
-              <li><a href="https://nhcarrigan.com/work/">Past work</a></li>
-              <li><a href="https://nhcarrigan.com/#approach">Approach</a></li>
-              <li><a href="https://nhcarrigan.com/#about">About</a></li>
-              <li><a href="https://nhcarrigan.com/#contact">Contact</a></li>
+              <li><a href="https://spellware.dev/#services">Services</a></li>
+              <li><a href="https://spellware.dev/products/">Products</a></li>
+              <li><a href="https://spellware.dev/work/">Past work</a></li>
+              <li><a href="https://spellware.dev/#approach">Approach</a></li>
+              <li><a href="https://spellware.dev/#about">About</a></li>
+              <li><a href="https://spellware.dev/#contact">Contact</a></li>
               <li><a href="tel:+19713038662">Call (971) 303-8662</a></li>
-              <li><a href="https://nhcarrigan.com/meet/">Book a meeting</a></li>
-              <li><a href="https://nhcarrigan.com/donate/">Support us</a></li>
+              <li><a href="https://spellware.dev/meet/">Book a meeting</a></li>
+              <li><a href="https://spellware.dev/donate/">Support us</a></li>
             </ul>
           </nav>
 
           <nav aria-label="Resources">
             <h2>Resources</h2>
             <ul class="nhc-footer-links">
-              <li><a href="https://docs.nhcarrigan.com" target="_blank" rel="noopener noreferrer">Documentation</a></li>
-              <li><a href="https://mktg.nhcarrigan.com/blog" target="_blank" rel="noopener noreferrer">Blog</a></li>
-              <li><a href="https://nhcarrigan.com/#newsletter">Newsletter</a></li>
-              <li><a href="https://nhcarrigan.com/faq/">FAQs</a></li>
-              <li><a href="https://github.com/nhcarrigan" target="_blank" rel="noopener noreferrer">Open source</a></li>
-              <li><a href="https://nhcarrigan.com/testimonials/">Testimonials</a></li>
-              <li><a href="https://nhcarrigan.com/events/">Events and talks</a></li>
-              <li><a href="https://nhcarrigan.com/experience/">Founder experience</a></li>
-              <li><a href="https://nhcarrigan.com/socials/">Socials</a></li>
-              <li><a href="https://nhcarrigan.com/style/">Style guide</a></li>
-              <li><a href="https://chat.nhcarrigan.com" target="_blank" rel="noopener noreferrer">Community</a></li>
+              <li><a href="https://docs.spellware.dev" target="_blank" rel="noopener noreferrer">Documentation</a></li>
+              <li><a href="https://mktg.spellware.dev/blog" target="_blank" rel="noopener noreferrer">Blog</a></li>
+              <li><a href="https://spellware.dev/#newsletter">Newsletter</a></li>
+              <li><a href="https://spellware.dev/faq/">FAQs</a></li>
+              <li><a href="https://github.com/spellware" target="_blank" rel="noopener noreferrer">Open source</a></li>
+              <li><a href="https://spellware.dev/testimonials/">Testimonials</a></li>
+              <li><a href="https://spellware.dev/events/">Events and talks</a></li>
+              <li><a href="https://spellware.dev/experience/">Founder experience</a></li>
+              <li><a href="https://spellware.dev/socials/">Socials</a></li>
+              <li><a href="https://spellware.dev/style/">Style guide</a></li>
+              <li><a href="https://chat.spellware.dev" target="_blank" rel="noopener noreferrer">Community</a></li>
             </ul>
           </nav>
 
           <nav aria-label="Legal">
             <h2>Legal</h2>
             <ul class="nhc-footer-links">
-              <li><a href="https://docs.nhcarrigan.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacy policy</a></li>
-              <li><a href="https://docs.nhcarrigan.com/legal/terms/" target="_blank" rel="noopener noreferrer">Terms of service</a></li>
-              <li><a href="https://docs.nhcarrigan.com/community/coc" target="_blank" rel="noopener noreferrer">Code of conduct</a></li>
-              <li><a href="https://docs.nhcarrigan.com/legal/license/" target="_blank" rel="noopener noreferrer">Software licence</a></li>
+              <li><a href="https://docs.spellware.dev/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacy policy</a></li>
+              <li><a href="https://docs.spellware.dev/legal/terms/" target="_blank" rel="noopener noreferrer">Terms of service</a></li>
+              <li><a href="https://docs.spellware.dev/community/coc" target="_blank" rel="noopener noreferrer">Code of conduct</a></li>
+              <li><a href="https://docs.spellware.dev/legal/license/" target="_blank" rel="noopener noreferrer">Software licence</a></li>
             </ul>
           </nav>
         </div>
 
         <div class="nhc-footer-base">
           <p>
-            &copy; ${nhcarriganHeadersCurrentYear} NHCarrigan. All rights reserved.
+            &copy; ${nhcarriganHeadersCurrentYear} SpellWare. All rights reserved.
             <span class="nhc-footer-address">15640 NE Fourth Plain Blvd, Ste 106 #923, Vancouver, WA 98682, United States</span>
           </p>
           <div id="tree-nation-offset-website" data-widget-type="offset-website" data-tree-nation-code="a17464e0cd351220" data-lang="en" data-theme="dark"></div>
@@ -1526,7 +1526,7 @@ const interval = setInterval(() => {
 `;
 const nhcarriganHeadersFontAwesome = document.createElement("script");
 nhcarriganHeadersFontAwesome.src
-  = "https://cdn.nhcarrigan.com/font-awesome/all.min.js";
+  = "https://cdn.spellware.dev/font-awesome/all.min.js";
 
 const nhcarriganHeadersConsentBanner = document.createElement("script");
 nhcarriganHeadersConsentBanner.src
@@ -1775,7 +1775,7 @@ if (nhcarriganHeadersShowHeader) {
 // #region CTA
 
 const nhcarriganNoModalUrls = new Set([
-  "https://forms.nhcarrigan.com/o/docs/forms/7LNb8jFoN4SPBvP7vRxDi2/4",
+  "https://forms.spellware.dev/o/docs/forms/7LNb8jFoN4SPBvP7vRxDi2/4",
 ]);
 
 /**
@@ -1789,12 +1789,12 @@ const nhcarriganHeadersCreateCta = (): HTMLDialogElement => {
   dialog.innerHTML = `
   <button type="button" class="nhc-cta-close" aria-label="Close">&times;</button>
   <p class="nhc-cta-eyebrow">Community</p>
-  <h2 id="community-cta-title">Join the NHCarrigan community</h2>
+  <h2 id="community-cta-title">Join the SpellWare community</h2>
   <div class="nhc-cta-body">
-    <img src="https://cdn.nhcarrigan.com/brand/v2/logo.png" alt="NHCarrigan logo">
+    <img src="https://cdn.spellware.dev/brand/v2/logo.png" alt="SpellWare logo">
     <p>Stay connected with our latest projects, get help with our products and meet the people behind them.</p>
   </div>
-  <a class="nhc-btn nhc-btn-primary" href="https://chat.nhcarrigan.com" target="_blank" rel="noreferrer">Join us on Discord</a>
+  <a class="nhc-btn nhc-btn-primary" href="https://chat.spellware.dev" target="_blank" rel="noreferrer">Join us on Discord</a>
 `;
   return dialog;
 };

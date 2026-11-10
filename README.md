@@ -8,29 +8,37 @@ When building the file, it is important to use `pnpm build` so that the minifica
 
 ## Design System
 
-The injected stylesheet is the shared visual language for every page, and it matches the company site at [nhcarrigan.com](https://nhcarrigan.com/). Read the [style guide](https://nhcarrigan.com/style/) for the reasoning. It uses the official palette, system fonts for text, and Fraunces for the wordmark only. Everything is lit from the upper right by one Witch Rose light.
+The injected stylesheet is the shared visual language for every page, and it matches the company site at [spellware.dev](https://spellware.dev/). Read the [style guide](https://spellware.dev/style/) for the reasoning. It uses the official palette, system fonts for text, and Fraunces for the wordmark only. Everything is lit from the upper right by one Witch Rose light.
 
 - **Design tokens** (`--witch-*` colours, `--font-*`, `--radius`, `--surface`, `--foreground`, `--link` and more) load on every page. The site is light only, so there is no dark theme and no theme toggle. Pages should still use the tokens (for example `var(--surface)`) rather than hard-coded colours.
-- **The header** is a floating glass bar with the same logo and links as the company site. The text beside the logo is the page title. Set it with `data-nhcarrigan-title` on the `html` element, or leave it and it is taken from the page's `<title>` without the NHCarrigan name or its separators.
+- **The header** is a floating glass bar with the same logo and links as the company site. The text beside the logo is the page title. Set it with `data-nhcarrigan-title` on the `html` element, or leave it and it is taken from the page's `<title>` without the SpellWare name or its separators.
 - **The footer** is a replica of the company site footer, with the same columns and links.
 - **The background** is the artwork, frosted over by the same rose and lavender light as the company site. Frosting is dropped on phones and when the reader asks for reduced transparency.
 - **Page chrome and element defaults** style `main`, headings, links, buttons, forms, lists, tables, blockquotes, code and HubSpot form buttons. `main` is a centred, lit, frosted card with a rose edge glow, and the footer sits at the end of the page rather than being fixed to the viewport.
 - **The community popup** has the same lit surface, rose glow and glowing button.
 - **Components** are opt-in classes, all prefixed `nhc-` so they cannot collide with an app's own styles: `nhc-card`, `nhc-quote`, `nhc-notice`, `nhc-grid-2`, `nhc-grid-3`, `nhc-eyebrow`, `nhc-section-head`, `nhc-pill`, `nhc-accent`, `nhc-feature`, `nhc-faq-grid` with `nhc-faq-card`, and `nhc-chip`. Buttons use `nhc-btn` with `nhc-btn-primary`, `nhc-btn-ghost`, `nhc-btn-outline`, `nhc-btn-dark` and `nhc-btn-small`.
 
+### What changed in v6.3
+
+Version 6.3 renames the company from NHCarrigan to SpellWare. No markup changes are needed on any page:
+
+- The header, footer, social image and structured text now say SpellWare, and every link points at the matching `spellware.dev` address.
+- The shared files are now served from `cdn.spellware.dev`. The old `cdn.nhcarrigan.com` address keeps working for pages that have not been updated.
+- The attribute that excludes a page's own layout is still `data-nhcarrigan-exclude`, so existing pages keep working. The `nhc-` class prefix is unchanged for the same reason.
+
 ### What changed in v6.2
 
 Version 6.2 adds our tagline. No markup changes are needed on any page:
 
 - The footer now opens with the tagline, "Thoughtfully built. Wonderfully human.", in the brand typeface. The descriptor stays beneath it.
-- The social image served by default is now `cdn.nhcarrigan.com/brand/v3/og-image.png`, which carries the tagline. Its alt text describes the logo and the tagline.
+- The social image served by default is now `cdn.spellware.dev/brand/v3/og-image.png`, which carries the tagline. Its alt text describes the logo and the tagline.
 
 ### What changed in v6.1
 
 Version 6.1 adopts the new brand. No markup changes are needed on any page:
 
-- The logo, favicons and social image are now served from `cdn.nhcarrigan.com/brand/v2/`.
-- The header shows the full wordmark, served from `cdn.nhcarrigan.com/wordmark.png`, in place of the logo and the company name. A page title set with `data-nhcarrigan-title`, or taken from the document title, still appears beside it after a divider. When the title is only the company name, nothing is added.
+- The logo, favicons and social image are now served from `cdn.spellware.dev/brand/v2/`.
+- The header shows the full wordmark, served from `cdn.spellware.dev/wordmark.png`, in place of the logo and the company name. A page title set with `data-nhcarrigan-title`, or taken from the document title, still appears beside it after a divider. When the title is only the company name, nothing is added.
 - The wordmark typeface is Fraunces. Griffy is retired, and `--font-brand` now resolves to Fraunces. Use the new `--font-brand-variation` token with it so that the letterforms match the logo.
 - `.witchy-accent`, `.mystical-text` and `.spooky-title` still work, and now use Fraunces at weight 600.
 
@@ -72,7 +80,7 @@ This page is currently deployed. [View the live website.]
 
 ## Feedback and Bugs
 
-If you have feedback or a bug report, please [log a ticket on our forum](https://support.nhcarrigan.com).
+If you have feedback or a bug report, please [log a ticket on our forum](https://support.spellware.dev).
 
 ## Contributing
 
@@ -84,10 +92,10 @@ Before interacting with our community, please read our [Code of Conduct](CODE_OF
 
 ## License
 
-This software is licensed under our [global software license](https://docs.nhcarrigan.com/#/license).
+This software is licensed under our [global software license](https://docs.spellware.dev/#/license).
 
 Copyright held by Naomi Carrigan.
 
 ## Contact
 
-We may be contacted through our [Chat Server](http://chat.nhcarrigan.com) or via email at `contact@nhcarrigan.com`.
+We may be contacted through our [Chat Server](http://chat.spellware.dev) or via email at `contact@nhcarrigan.com`.
